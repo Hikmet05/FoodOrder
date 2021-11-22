@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 13px;
+}
+/*.................................*/
+header{
+    border: 1px solid black;
+    width: 100%;
+    height: 73rem;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;  
+}
+#container{   
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;   
+}
+#container h1,#container h3{
+    color: white;
+    text-align: center;
+}
+#headerSearch{
+    border: 1px solid #FF6345;
+    border-radius: 2px;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    background-color: #FF6345;
+    padding: 1.5rem 2rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+form input{
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    text-indent: 1.5rem;
+    padding: 0 0.3rem;
+    outline: none;
+    
+}
+.iconLocation::placeholder{
+    background-image: url(img/placeholder.png);
+    width: auto;
+    height: 1.3rem;
+    background-repeat: no-repeat;
+    z-index: -1;   
+}
+.iconFood::placeholder {
+    background-image: url(img/food.png);
+    width: auto;
+    height: 1.3rem;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+form button{
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 2.7rem;
+    background-color: #FFBE00;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.2rem;
+}
+form button:hover{
+    background-color: white;
+    color: #dd2500;
+    transition: 1s;
+}
+
+.box{    
+    width: 100%;
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+.boxWindow{
+    background-color:#FFBE00;
+    width: 7rem;
+    height: 7rem;
+    border-radius:50%;
+    padding-top: 0.7rem;
+    float: left;   
+}
+.boxIconOne{
+    background-image: url(img/megaphone.png);
+    width: 5rem;
+    height: 5rem;
+    background-size: cover;
+    margin: auto;
+}
+.boxWindow:hover{
+    background-color:white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.boxWindow:hover .boxIconOne{
+   background-image: url(img/megaphoneHover.png);
+    transition: 1s;
+}
+
+.boxIconTwo{
+    background-image: url(img/boss.png);
+    width: 5rem;
+    height: 5rem;
+    background-size: cover;
+    margin: auto; 
+}
+.boxWindow:hover .boxIconTwo{
+   background-image: url(img/bossHover.png);
+    transition: 1s; 
+}
+.boxIconThree{
+    background-image: url(img/protection.png);
+    width: 5rem;
+    height: 5rem;
+    background-size: cover;
+    margin: auto;
+}
+.boxWindow:hover .boxIconThree{
+   background-image: url(img/protectionHover.png);
+    transition: 1s;
+}
+.boxIconFour{
+    background-image: url(img/boss.png);
+    width: 5rem;
+    height: 5rem;
+    background-size: cover;
+    margin: auto; 
+}
+.boxWindow:hover .boxIconFour{
+   background-image: url(img/bossHover.png);
+   transition: 1s;  
+}
+.boxInfo{
+    width: 65%;
+    height: 7rem;
+    float: left;
+    margin-left: 2rem; 
+}
+.box h2,.box p{
+    color: white;  
+}
+main{
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+}
+main h1{
+    text-align: center;
+}
+#foodWindow{
+    border: 5px solid #FFBE00;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.foodOne{
+    background-image: url(img/food1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+.foodTwo{
+    background-image: url(img/food2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-attachment: fixed;  
+}
+.foodThree{
+    background-image: url(img/food3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-attachment: fixed;
+}
+.foodFour{
+    background-image: url(img/food4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-attachment: fixed;
+}
+.foodInfo h2{
+    text-align: center;
+}
+
+.container-fluid {
+    height: auto;
+    background-color:#FFBE00;
+}
+footer a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+footer a ion-icon {
+    font-size: xx-large;
+    padding: 5px;
+}
+footer a:hover {
+    color: #dd2500;
+}
+footer span a:hover {
+    text-decoration: underline;
+}
+footer li {
+    list-style-type: none;
+}
+footer h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*+++++++++++RESPONSIVE+++++++++++*/
+@media screen and (min-width:0px) and (max-width:768px){
+    .container-fluid{
+        padding: 20px 0px;
+    }
+    footer {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width:800px){
+    html{
+        font-size: 15px;
+    }
+    #headerSearch{
+        width: 65%;
+    }
+    .box{
+        width: 65%;
+        margin: auto;
+    }
+    .boxes{
+        background-attachment: local;
+    }
+    .foodBoxes {
+        overflow: hidden;
+    }
+    .foodBoxes .boxes {  
+        transition: 0.8s;
+    }
+    .foodBoxes:hover .boxes {
+        transform: scale(1.2);
+    }
+
+}
+
+
+@media screen and (min-width:1200px){
+    html{
+        font-size: 18px;
+    }
+    header{
+        height: 60rem;
+    }
+    #headerSearch{
+        width: 60%;
+    }
+    main{
+        padding: 2rem 0;
+        height: 74rem;
+    }
+    .box{
+        width: 50%;
+        float: left;
+        margin-top: 1.5rem;
+    }
+    #foodWindow:nth-child(odd){
+        width: 49%;
+        float: right;
+    }
+    #foodWindow:nth-child(even){
+        width: 49%;
+        float: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
